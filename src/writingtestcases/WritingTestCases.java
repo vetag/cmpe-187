@@ -23,7 +23,7 @@ public class WritingTestCases {
 		int xySides = x + y;
 		int zySides = z + y;
 		int zxSides = z + x;
-		if(xySides > z && zySides > x && zxSides > y) {
+		if(xySides > z && zySides > x && zxSides > y || x > 0 || y > 0 || z > 0) {
 			if(x == y && x == z) {
 				System.out.println("The triangle is equilateral");
 				test = true;
@@ -49,5 +49,20 @@ public class WritingTestCases {
 	 */
 	public static void main(String[] args) {
 		System.out.println(new WritingTestCases().TriangleOrNot(11, 1, 12));
+		
+		System.out.println("\nTesting with x=1, y=1, z=1:");
+		System.out.println(new WritingTestCases().TriangleOrNot(1, 1, 1));
+		
+		System.out.println("\nTesting with x=2, y=2, z=4:");
+		System.out.println(new WritingTestCases().TriangleOrNot(2, 2, 4));
+		
+		System.out.println("\nTesting with x=1, y=2, z=3:");
+		System.out.println(new WritingTestCases().TriangleOrNot(1, 2, 3));
+		
+		System.out.println("\nTesting with x=0, y=0, z=0:");
+		System.out.println(new WritingTestCases().TriangleOrNot(0, 0, 0));
+		
+		System.out.println("\nTesting with x=-1, y=0, z=0:");
+		System.out.println(new WritingTestCases().TriangleOrNot(-1, 0, 0));
 	}
 }
