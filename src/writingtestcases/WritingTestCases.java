@@ -42,12 +42,30 @@ public class WritingTestCases {
 		}
 		return test;
 	}
-	
+
 	/*
 	 * Tester method
 	 * Change the numbers inside TriangleOrNot() to test triangles. First number is x, second number is y, third number is z
 	 */
 	public static void main(String[] args) {
 		System.out.println(new WritingTestCases().TriangleOrNot(11, 1, 12));
+
+		System.out.println("\nTesting with x=1, y=1, z=1:");
+		System.out.println(new WritingTestCases().TriangleOrNot(1, 1, 1));
+
+		System.out.println("\nTesting with x=2, y=2, z=4:");
+		System.out.println(new WritingTestCases().TriangleOrNot(2, 2, 4));
+
+		System.out.println("\nTesting with x=1, y=2, z=3:");
+		System.out.println(new WritingTestCases().TriangleOrNot(1, 2, 3));
+
+		System.out.println("\nTesting with x=0, y=0, z=0:");
+		System.out.println(new WritingTestCases().TriangleOrNot(0, 0, 0));
+
+		System.out.println("\nTesting with x=-1, y=0, z=0:");
+		System.out.println(new WritingTestCases().TriangleOrNot(-1, 0, 0));
+		
+		System.out.println("\nTesting with x=x, y=y, z=z:");
+		System.out.println(new WritingTestCases().TriangleOrNot(x, y, z));
 	}
 }
