@@ -23,7 +23,7 @@ public class WritingTestCases {
 		int xySides = x + y;
 		int zySides = z + y;
 		int zxSides = z + x;
-		if(xySides > z && zySides > x && zxSides > y) {
+		if(xySides > z && zySides > x && zxSides > y || x > 0 || y > 0 || z > 0) {
 			if(x == y && x == z) {
 				System.out.println("The triangle is equilateral");
 				test = true;
