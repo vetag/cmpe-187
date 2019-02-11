@@ -30,7 +30,7 @@ public class WritingTestCases {
 				System.out.println("The triangle is equilateral");
 				test = true;
 			}
-			else if(x == y || x == z) {
+			else if(x == y || x == z || y == z) {
 				System.out.println("The triangle is isosceles");
 				test = true;
 			}
@@ -55,6 +55,12 @@ public class WritingTestCases {
 		
 		System.out.println("\nTesting with x=9, y=9, z=14:");
 		System.out.println(new WritingTestCases().TriangleOrNot(9, 9, 14));
+		
+		System.out.println("\nTesting with x=20, y=1, z=20:");
+		System.out.println(new WritingTestCases().TriangleOrNot(20, 1, 20));
+		
+		System.out.println("\nTesting with x=5, y=10, z=10:");
+		System.out.println(new WritingTestCases().TriangleOrNot(5, 10, 10));
 		
 		System.out.println("\nTesting with x=6, y=12, z=14:");
 		System.out.println(new WritingTestCases().TriangleOrNot(6, 12, 14));
