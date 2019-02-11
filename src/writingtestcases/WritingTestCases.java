@@ -73,5 +73,14 @@ public class WritingTestCases {
 		
 		System.out.println("\nTesting with x=2, y=3, z=10:");
 		System.out.println(new WritingTestCases().TriangleOrNot(2, 3, 10));
+		
+		System.out.println("\nTesting with x=5, y=5, z=20:");
+		System.out.println(new WritingTestCases().TriangleOrNot(5, 5, 20));
+		
+		System.out.println("\nTesting with x=2, y=6, z=2:");
+		System.out.println(new WritingTestCases().TriangleOrNot(2, 6, 2));
+		
+		System.out.println("\nTesting with x=30, y=15, z=15:");
+		System.out.println(new WritingTestCases().TriangleOrNot(30, 15, 15));
 	}
 }
