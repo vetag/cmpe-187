@@ -22,7 +22,7 @@ public class Palindrome {
 			reverseStr += input.charAt(i);
 		}
 		// Convert all strings to lower case and remove all spaces
-		if (reverseStr.toLowerCase().replaceAll("\\s", "").equals(input.toLowerCase().replaceAll("\\s", ""))) {
+		if (reverseStr.equals(input)) {
 			
 			isBoolean = true;
 		}
@@ -47,7 +47,7 @@ public class Palindrome {
 				System.out.print("Please enter a phrase to determine if it is Palindrome: ");
 			}
 
-			String input = in.nextLine();
+			String input = in.nextLine().toLowerCase().replaceAll("[^a-zA-Z0-9_-]", "");
 			// Check if input is Palindrome
 			if (isPalindrome(input) == true) {
 				System.out.println("\"" + input + "\" has a length " + input.length() + " and is a Palindrome. " + isPalindrome(input));
