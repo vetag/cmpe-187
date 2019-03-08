@@ -17,11 +17,13 @@ public class Palindrome {
 		String reverseStr ="";
 		Boolean isBoolean = false;
 		
-		// Loops through string input in reverse 
+		// Loop through string input in reverse and add to string
 		for (int i = input.length() - 1; i >= 0; i--) {
 			reverseStr += input.charAt(i);
 		}
-		if (reverseStr.toLowerCase().equals(input.toLowerCase())) {
+		// Convert all strings to lower case and remove all spaces
+		if (reverseStr.toLowerCase().replaceAll("\\s", "").equals(input.toLowerCase().replaceAll("\\s", ""))) {
+			
 			isBoolean = true;
 		}
 		else {
