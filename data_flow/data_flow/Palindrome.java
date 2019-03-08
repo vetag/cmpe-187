@@ -50,10 +50,10 @@ public class Palindrome {
 			String input = in.nextLine();
 			// Check if input is Palindrome
 			if (isPalindrome(input) == true) {
-				System.out.println(input + " has a length " + input.length() + " and is a Palindrome. " + isPalindrome(input));
+				System.out.println("\"" + input + "\" has a length " + input.length() + " and is a Palindrome. " + isPalindrome(input));
 				System.out.println();
 			} else {
-				System.out.println(input + " has a length " + input.length() + " and is not a Palindrome. " + isPalindrome(input));
+				System.out.println("\"" + input + "\"" + " has a length " + input.length() + " and is not a Palindrome. " + isPalindrome(input));
 				System.out.println();
 			}
 		} while (!exit);
