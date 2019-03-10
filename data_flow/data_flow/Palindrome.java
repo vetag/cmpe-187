@@ -26,9 +26,6 @@ public class Palindrome {
 			
 			isBoolean = true;
 		}
-		else {
-			isBoolean = false;
-		}
 		return isBoolean;
 	}
 	
